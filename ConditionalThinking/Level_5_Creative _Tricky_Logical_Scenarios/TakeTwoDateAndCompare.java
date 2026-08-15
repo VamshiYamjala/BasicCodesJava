@@ -1,7 +1,7 @@
 import java.util.*;
 class CheckWhichComesFirst{
     public void CheckwhicDateAndMonthComesFirst(int Date1,int Date2,int Month1,int Month2){
-        if(((Date1 >=1 && Date1<=31) ||(Date2 >=1 && Date2<=31 )) && ((Month1 >=1 && Month1<=12)&&(Month2 >=1 && Month2<=12)) ){
+        if(((Date1 >=1 && Date1<=31) &&(Date2 >=1 && Date2<=31 )) && ((Month1 >=1 && Month1<=12)&&(Month2 >=1 && Month2<=12)) ){
             if((Month1 > Month2)){
                 System.out.println(Date1 +"&"+Month1 +"is greater then "+Date2+"&"+Month2);
             }
