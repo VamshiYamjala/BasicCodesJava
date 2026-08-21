@@ -28,5 +28,6 @@ public class SmallestAndLargestDigitInNum {
         System.out.println("enter the number");
         int num = sc.nextInt();
         pn.SmallAndLargestNum(num);
+        sc.close();
     }
 }
