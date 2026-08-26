@@ -8,6 +8,7 @@ class RotateAnArray {
         int split = arr.length - k;
         int[] firstArray = new int[split];
         int[] secondArray = new int[arr.length - split];
+        System.out.println(Arrays.toString(firstArray));
         for (int i = 0; i < arr.length; i++) {
             if (i < split) {
                 firstArray[i] = arr[i];
@@ -18,6 +19,7 @@ class RotateAnArray {
         System.arraycopy(secondArray, 0, arr, 0, secondArray.length);
         System.arraycopy(firstArray, 0, arr, (secondArray.length), firstArray.length);
         System.out.println(Arrays.toString(arr));
+
     }
 }
 
