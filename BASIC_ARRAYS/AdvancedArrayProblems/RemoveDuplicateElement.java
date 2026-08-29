@@ -14,7 +14,6 @@ class Duplicate1{
             }
         }
         System.out.println(Arrays.toString(Arrays.copyOf(newArray, count)));
-    
     }
 }
 public class RemoveDuplicateElement {
