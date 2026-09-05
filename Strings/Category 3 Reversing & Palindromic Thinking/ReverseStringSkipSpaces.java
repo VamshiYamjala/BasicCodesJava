@@ -1,12 +1,14 @@
-class ReversecharInString {
-    public void PrintReversechar(String value) {
+import java.util.Arrays;
+
+class StringreverseSkip {
+    public void SkipSpaces(String value) {
         char[] ch = value.toCharArray();
         int left = 0;
         int right = ch.length - 1;
         while (left < right) {
-            if (ch[left] >= '0' && ch[left] <= '9') {
+            if (ch[left] == ' ') {
                 left++;
-            } else if (ch[right] >= '0' && ch[right] <= '9') {
+            } else if (ch[right] == ' ') {
                 right--;
             } else {
                 char temp = ch[left];
@@ -20,10 +22,10 @@ class ReversecharInString {
     }
 }
 
-public class Reversechar {
+public class ReverseStringSkipSpaces {
     public static void main(String[] args) {
-        ReversecharInString rs = new ReversecharInString();
-        String value = "a1b2c3";
-        rs.PrintReversechar(value);
+        StringreverseSkip sr = new StringreverseSkip();
+        String value = "abc def";
+        sr.SkipSpaces(value);
     }
 }
