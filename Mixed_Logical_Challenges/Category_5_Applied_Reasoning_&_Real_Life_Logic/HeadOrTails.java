@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.util.random.*;
 
 class HT {
     public void PrintCountOfHOrT(int n) {
@@ -10,7 +9,7 @@ class HT {
 
         for (int i = 0; i < n; i++) {
 
-            int toss = r.nextInt(2);
+            int toss = r.nextInt(n);
 
             if (toss == 0) {
                 countH++;
