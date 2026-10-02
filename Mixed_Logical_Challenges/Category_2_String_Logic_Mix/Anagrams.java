@@ -7,8 +7,8 @@ class Ana{
         }
         char[] ch1 = name.toCharArray();
         char[] ch2 = name2.toCharArray();
-        Arrays.sort(ch1);
-        Arrays.sort(ch2);
+        Arrays.sort(ch1);//sorting character array1
+        Arrays.sort(ch2);//sorting character array2
         if(Arrays.equals(ch1,ch2)){
             System.out.println("yes it is a anagram");
         }
